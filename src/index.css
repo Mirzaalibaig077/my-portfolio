@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Accent color variables — golden/amber to match reference CTA pill */
+  :root {
+    --accent-rgb: 217 119 6; /* amber-600 */
+  }
+  .dark {
+    --accent-rgb: 251 191 36; /* amber-400 */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Offset anchors so sticky navbar doesn't cover headings */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  body {
+    @apply bg-white text-navy-800 antialiased;
+  }
+  .dark body {
+    @apply bg-page-dark text-navy-100;
+  }
+
+  /* Consistent visible focus ring for keyboard users */
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-navy-600 ring-offset-2 ring-offset-white;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
