@@ -21,7 +21,8 @@ export default function Hero() {
     ? {}
     : { initial: { opacity: 0, y: 14 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.45 } }
 
-  const photoHref = `${import.meta.env.BASE_URL}${meta.photo}`
+  //const photoHref = `${import.meta.env.BASE_URL}${meta.photo}`
+  const photoHref = `${import.meta.env.BASE_URL}${meta.photo.replace(/^\/+/, '')}`
   const iconLink =
     'inline-flex h-9 w-9 items-center justify-center rounded-full border border-navy-200 text-navy-500 transition-colors hover:border-amber-400 hover:text-amber-500 dark:border-navy-700 dark:text-navy-300 dark:hover:text-amber-400'
 
