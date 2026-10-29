@@ -28,7 +28,7 @@ export const portfolio = {
     github: 'https://github.com/Mirzaalibaig077',
     tagline:
       'Building production-ready web apps and AI-powered systems with Python, FastAPI and the MERN stack.',
-    photo: 'profile.jpg',
+    photo: 'Profile.jpg',
     resume: 'Mirza_Ali_Resume.pdf', // TODO: replace public/Mirza_Ali_Resume.pdf with your real CV
   },
 

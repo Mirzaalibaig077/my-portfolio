@@ -129,7 +129,6 @@ export default function Hero() {
               aria-hidden="true"
             />
             <div className="relative h-52 w-52 overflow-hidden rounded-full border border-navy-100 bg-white shadow-card dark:border-navy-800 dark:bg-navy-900 md:h-64 md:w-64">
-              {/* TODO: public/profile.jpg — swap for real photo */}
               {imgError ? (
                 <div className="flex h-full w-full items-center justify-center bg-navy-600 font-display text-4xl font-bold text-white">
                   {initials}
@@ -139,7 +138,7 @@ export default function Hero() {
                   src={photoHref}
                   alt={`${meta.name} profile photo`}
                   onError={() => setImgError(true)}
-                  
+                  className="h-full w-full object-cover object-center"
                 />
               )}
             </div>

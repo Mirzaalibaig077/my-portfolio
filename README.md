@@ -74,10 +74,10 @@ meta: { ..., showPhone: false } // set to true to show your phone in Contact
 
 ## Replacing the profile photo
 
-1. Drop your image into `public/` (e.g. `public/profile.jpg`).
-2. In `portfolio.js` set `meta.photo: 'profile.jpg'`.
+1. Drop your image into `public/` (e.g. `public/Profile.jpg`).
+2. In `portfolio.js` set `meta.photo` to the exact filename, including capitalization.
 
-The current `public/profile.svg` is a placeholder monogram. If the photo file fails to load, the Hero automatically shows an initials avatar.
+The current profile photo is `public/Profile.jpg`. If the photo file fails to load, the Hero automatically shows an initials avatar.
 
 ## Replacing the CV
 
